@@ -9,18 +9,18 @@ import { Router, RouterEvent } from '@angular/router';
 })
 export class MenuPage implements OnInit {
  selectedPath = '';
- 
+
   pages = [
     {
-      title: 'First Page with Tabs',
+      title: 'Página con pestañas',
       url: '/menu/first'
     },
     {
-      title: 'Second Page blank',
+      title: 'Otra página',
       url: '/menu/second'
     }
   ];
- 
+
   constructor(private router: Router) {
     this.router.events.subscribe((event: RouterEvent) => {
       if (event && event.url) {
@@ -28,9 +28,9 @@ export class MenuPage implements OnInit {
       }
     });
   }
- 
+
   ngOnInit() {
- 
+
   }
 
 }

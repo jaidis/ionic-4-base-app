@@ -1,12 +1,28 @@
 <ion-split-pane>
   <ion-menu contentId="content">
- 
+
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Menu</ion-title>
+      <ion-toolbar color="dark" class="user-profile">
+
+        <ion-item lines="none">
+          <ion-avatar slot="start" class="user-avatar">
+            <img src="assets/img/user.png">
+          </ion-avatar>
+          <ion-label>
+            <ion-text color="medium">
+              <h1><strong>John Doe</strong></h1>
+            </ion-text>
+            <ion-text color="light">
+              <h3>
+                New York, USA
+              </h3>
+            </ion-text>
+          </ion-label>
+        </ion-item>
+
       </ion-toolbar>
     </ion-header>
- 
+
     <ion-content>
       <ion-list>
         <ion-menu-toggle auto-hide="false" *ngFor="let p of pages">
@@ -16,18 +32,18 @@
             </ion-label>
           </ion-item>
         </ion-menu-toggle>
- 
+
         <ion-item tappable routerLink="/login" routerDirection="root">
           <ion-icon name="log-out" slot="start"></ion-icon>
           Logout
         </ion-item>
- 
+
       </ion-list>
- 
+
     </ion-content>
- 
+
   </ion-menu>
- 
+
   <ion-router-outlet id="content" main></ion-router-outlet>
- 
+
 </ion-split-pane>
