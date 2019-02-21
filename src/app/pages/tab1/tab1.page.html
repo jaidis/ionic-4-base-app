@@ -1,17 +1,57 @@
 <ion-header>
   <ion-toolbar color="primary">
-  	<ion-buttons slot="start">
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>tab1</ion-title>
+    <ion-title>Android</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  My first tab content
- 
-  <ion-button expand="block" routerLink="/menu/first/tabs/tab1/details" routerDirection="forward">
-    Details forward
-  </ion-button>
- 
+
+  <ion-card routerLink="/menu/first/tabs/tab1/details" routerDirection="forward">
+  <ion-card-header>
+    <ion-card-subtitle>Subtitulo</ion-card-subtitle>
+    <ion-card-title>Título</ion-card-title>
+  </ion-card-header>
+  <ion-img src="https://developer.android.com/images/home/illustration-home-2018-year-in-review-small.svg"></ion-img>
+  <ion-card-content>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, omnis. Reprehenderit quam tempore excepturi quae dolore, odit a veniam ipsum officiis recusandae. Quos assumenda consequuntur, labore sunt ipsam placeat laborum.
+  </ion-card-content>
+</ion-card>
+
+<ion-card routerLink="/home">
+  <ion-item>
+    <ion-icon name="pin" slot="start"></ion-icon>
+    <ion-label>Ruta de la seda</ion-label>
+    <ion-button fill="outline" slot="end">Visitar</ion-button>
+  </ion-item>
+
+  <ion-card-content>
+    Conoce la ruta de la seda entre Europa y Asia
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-item href="#" class="activated">
+    <ion-icon name="wifi" slot="start"></ion-icon>
+    <ion-label>Card Link Item 1 .activated</ion-label>
+  </ion-item>
+
+  <ion-item href="#">
+    <ion-icon name="wine" slot="start"></ion-icon>
+    <ion-label>Card Link Item 2</ion-label>
+  </ion-item>
+
+  <ion-item class="activated">
+    <ion-icon name="warning" slot="start"></ion-icon>
+    <ion-label>Card Button Item 1 .activated</ion-label>
+  </ion-item>
+
+  <ion-item>
+    <ion-icon name="walk" slot="start"></ion-icon>
+    <ion-label>Card Button Item 2</ion-label>
+  </ion-item>
+</ion-card>
+
 </ion-content>

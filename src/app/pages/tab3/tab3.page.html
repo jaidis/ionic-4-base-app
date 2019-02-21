@@ -1,12 +1,20 @@
 <ion-header>
   <ion-toolbar color="primary">
-  	<ion-buttons slot="start">
+    <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>tab3</ion-title>
+    <ion-title>AngularJS</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-
+  <ion-button class="button button-block button-solid ion-activatable ion-focusable hydrated activated" (click)="presentToast()" margin>
+    Toast simple
+  </ion-button>
+  <ion-button class="button button-block button-solid ion-activatable ion-focusable hydrated" (click)="presentToast2()" color="danger" margin>
+    Toast en la parte superior
+  </ion-button>
+  <ion-button class="button button-block button-solid ion-activatable ion-focusable hydrated" (click)="presentToast3()" color="warning" margin>
+    Cuidado al tocar
+  </ion-button>
 </ion-content>
