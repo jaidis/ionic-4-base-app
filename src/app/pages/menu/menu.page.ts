@@ -18,6 +18,10 @@ export class MenuPage implements OnInit {
     {
       title: 'Otra página',
       url: '/menu/second'
+    },
+    {
+      title: 'Perfil',
+      url:'/menu/perfil'
     }
   ];
 

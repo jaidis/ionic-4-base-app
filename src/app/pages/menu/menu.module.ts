@@ -23,6 +23,10 @@ const routes: Routes = [
       {
         path: 'second/details',
         loadChildren: '../details/details.module#DetailsPageModule'
+      },
+      {
+        path: 'perfil',
+        loadChildren: '../perfil/perfil.module#PerfilPageModule'
       }
     ]
   }
